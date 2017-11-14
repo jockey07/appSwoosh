@@ -132,6 +132,9 @@
                                         <state key="normal" title="mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mensBtnTapped:" destination="gjl-cR-TiQ" eventType="touchUpInside" id="vCf-R6-QNm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzv-As-Jjr" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="63" width="345" height="38"/>
@@ -140,6 +143,9 @@
                                         <state key="normal" title="womens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="womensBtnTapped:" destination="gjl-cR-TiQ" eventType="touchUpInside" id="AxW-7o-Jm0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaM-c4-tmA" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="126" width="345" height="38"/>
@@ -148,10 +154,13 @@
                                         <state key="normal" title="co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="coedBtnTapped:" destination="gjl-cR-TiQ" eventType="touchUpInside" id="Rrf-D0-yIV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyK-jl-kvo" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyK-jl-kvo" customClass="BorderButton" customModule="appSwoosh" customModuleProvider="target">
                                 <rect key="frame" x="15" y="565" width="345" height="38"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.43747249119999998" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -200,6 +209,7 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="nextBtn" destination="ZyK-jl-kvo" id="sGT-fR-s8B"/>
                         <segue destination="8fO-Gb-xrT" kind="show" identifier="skillVCSegue" id="4jW-88-KWm"/>
                     </connections>
                 </viewController>
